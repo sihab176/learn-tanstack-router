@@ -7,11 +7,14 @@ export const Route = createFileRoute("/dashboard")({
 function DashboardLayout() {
   return (
     <>
-      <h2>Dashboard Layout</h2>
-
-      <hr />
-
-      <Outlet />
+      <div
+        style={{
+          backgroundColor: "#383030",
+          padding: "20px",
+        }}
+      >
+        <Outlet />
+      </div>
     </>
   );
 }
